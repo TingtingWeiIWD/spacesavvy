@@ -1,0 +1,60 @@
+Course:
+INFO-5143 - JavaScript 4 Professor: Marcelo Hespanhol
+Project:
+Major Project Due Date: Saturday, Apr 15, 2023, at 11:59 PM
+Submitting:
+FOL Submissions Folder, Major Project Weight: 40% of the final grade
+Document Last Update: Sunday, March 12, 2023
+
+
+OVERVIEW:
+In this project, you will use your learned React skills to build a project of your own design. This is a very open-ended assignment in that you are allowed to choose a custom topic and create any application you see fit!
+You can work alone on this project or in a group of up to 3 students. It’s up to you. Just be sure your project reflects the number of students in it: the more students, the more polished your project is expected to be.
+Important: even if you are working alone on this project, you MUST be assigned to a group in FOL to see the submission folder. You can be the only student in a group. To join a group, go to FOL, menu Communications / Groups. You have until March 25 to join a group. After that, you will automatically be put alone in a group.
+The project will consist of 3 parts:
+1. Planning
+2. Development
+3. Presentation
+
+
+1. PLANNING
+Using any prototyping tool of your choice (or even a simple text editor like Microsoft Word) you will create a visual prototype of your application and create a short vision document outlining:
+• What your use case is for your project.
+o What will it do? Which components will you need to use to display information? How many “pages” (routes) will you need, and what will be displayed on each one? What data will you need to store?
+• Which APIs your project will utilize.
+o See the requirements below for reference.
+• Possible risks for your implementation.
+o Maybe you will need to learn functionality outside of the content taught in class in order to see your vision come to life.
+o The project may be risky because it could be very large for the amount of time you have to implement, etc.
+IMPORTANT:
+• Your app MUST have a purpose, so do not submit a bunch of code without any reason for existing. It should be something the users might be interested in using.
+o It is not because you can choose to develop any app that you will get a good grade for submitting anything. Make sure to create something you would be proud to show other people, possible employers, potential clients, etc. If in doubt, let me know your plans before you start working on it.
+• Your app MUST be original, meaning that no app submitted for labs will be accepted as a final project.
+This planning must be converted into a PDF file to be submitted for evaluation.
+
+
+
+2. DEVELOPMENT
+Build your application following your plan. Your implementation must also follow the guidelines below:
+• Your app MUST be developed using React JS: after all, you are expected to demonstrate what you have learned during the classes.
+• It MUST be a web app: it will be tested using Google Chrome. Therefore, React Native will not be accepted.
+• Your code must be logically divided up into components, and they must be well organized into your file structure.
+• You can choose any type of component you can work with. You can create Class Components or only Function Components with Hooks whenever necessary.
+• The app must behave as a Multi-Page Application, but without reloading the page when clicking on any menu. You can use React Router to accomplish that.
+• Your app must have a great UI (user interface) and provide a good UX (user experience). You can use any styling method you prefer: CSS, SCSS, Inline Style, Bootstrap, and so on. It is important that your app looks professional.
+• Your app must also use some type of data management, whether Firebase Firestore or Realtime Database.
+o It is your responsibility to ensure your database will be active until you receive the final grade for this project.
+• The use of Redux may not be necessary. This will not be part of the evaluation, so using Redux or not is up to you.
+• Typing your app with TypeScript is also optional. You can use the standard JavaScript approach, or you can use TypeScript on your app.
+• Your app must generate no critical warnings or fatal errors on the console when running on any browser.
+
+
+
+3. PRESENTATION
+You must also record and provide a link to a video where you walk through each requirement above and the associated code.
+• You should give a brief demo of how the application works.
+• Also, like a code review, I want to know how you solved each requirement.
+o Show the app functionality and the snip of code used for it.
+• The demonstrated app must match the submitted code.
+• Be objective: videos should be 5 minutes long, or less.
+Note: It is your responsibility to ensure that I will have access to the submitted video (I will not create an account with a service provider nor pay for subscriptions to watch your video).
