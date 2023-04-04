@@ -1,0 +1,19 @@
+$title-font: "Abril Fatface", cursive;
+$body-font: "Barlow Condensed", sans-serif;
+
+$primary-color: #3e6633;
+$secondary-color: #bb7302;
+$light-green: #9fb39b;
+$light-gray: #eaebee;
+$text-color: #242b33;
+
+$background-color: white;
+$border-color: #cddae5;
+$success-color: #0dc729;
+$danger-color: #cd2424;
+
+@mixin breakpoint($min-width) {
+  @media only screen and (min-width: $min-width) {
+    @content;
+  }
+}

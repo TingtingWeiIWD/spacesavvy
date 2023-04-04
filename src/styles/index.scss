@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Condensed:wght@100;400;700&display=swap");
+@import "./variebles.scss";
+
+body {
+  background-color: $background-color;
+  margin: 0;
+  color: $text-color;
+  font-family: $body-font;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
