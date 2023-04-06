@@ -1,0 +1,21 @@
+@import "../../styles/variebles.scss";
+
+a.btn {
+  display: block;
+  width: 120px;
+  background-color: $primary-color;
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: medium;
+}
+
+a.link {
+  display: block;
+  padding-top: 20px;
+  border-radius: 5px;
+  color: $primary-color;
+  text-decoration: none;
+}
