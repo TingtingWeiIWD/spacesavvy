@@ -5,7 +5,7 @@ div.about-page {
   flex-direction: column;
   row-gap: 8vw;
   hr {
-    width: 100%;
+    width: 80%;
   }
   div.slogan {
     margin-top: 5vw;
@@ -109,6 +109,10 @@ div.about-page {
           font-size: 3vw;
           // font-weight: 400;
           margin-top: 8vw;
+        }
+        hr {
+          width: 100%;
+          margin-bottom: 5vw;
         }
       }
 

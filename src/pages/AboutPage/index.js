@@ -29,7 +29,7 @@ export default function AboutPage() {
       <div className="team-pic">
         <img src={team} alt="SpaceSavvy Team" />
       </div>
-      <hr />
+
       <div className="history">
         <h3>The Evolution of SpaceSavvy: Our Story</h3>
         <p>
