@@ -1,4 +1,4 @@
-import { Form } from "react-router-dom";
+import team from "./team.jpg";
 import "./styles.scss";
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -59,6 +59,8 @@ export default function ContactPage() {
           </form>
         </div>
       </div>
+
+      <img src={team} alt="SpaceSavvy team in a meeting" />
     </div>
   );
 }

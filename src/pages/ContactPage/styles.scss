@@ -2,11 +2,17 @@
 
 div.contact-page {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  img {
+    margin-top: 5vw;
+    width: 100%;
+  }
   div {
     display: flex;
     width: 80%;
-    margin-top: 4vw;
+    margin-top: 3vw;
     column-gap: 3vw;
 
     div.contact-text {
@@ -70,6 +76,8 @@ div.contact-page {
             background-color: rgba(41, 69, 41, 0.195);
             font-family: $body-font;
             padding-left: 1vw;
+            padding-top: 1vw;
+
             border-radius: 5px;
           }
           input.submit {
