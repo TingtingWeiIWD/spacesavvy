@@ -1,5 +1,4 @@
 import "./styles.scss";
-import ContentCard from "../ContentCard";
 
 function TextImageBlock({ title, children, src, alt, className }) {
   return (

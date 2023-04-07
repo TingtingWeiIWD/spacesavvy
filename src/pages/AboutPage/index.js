@@ -91,7 +91,7 @@ export default function AboutPage() {
               highly respected design firm, known for its innovative designs and
               exceptional customer service.
             </TextImageBlock>
-            <TextImageBlock
+            <ImageTextBlock
               title="John | Co-founder / Head of Design Team"
               src={john}
               alt="Co-founder / Head of Design Team John"
@@ -108,7 +108,7 @@ export default function AboutPage() {
               He works closely with clients to understand their needs and
               preferences and is responsible for overseeing all aspects of the
               design process.
-            </TextImageBlock>
+            </ImageTextBlock>
             <TextImageBlock
               title="Lisa | CMO"
               src={lisa}
@@ -127,7 +127,7 @@ export default function AboutPage() {
               She is passionate about connecting with customers and building
               lasting relationships with them.
             </TextImageBlock>
-            <TextImageBlock
+            <ImageTextBlock
               title="Samantha | Designer"
               src={samantha}
               alt="Designer Samantha"
@@ -144,7 +144,7 @@ export default function AboutPage() {
               She works closely with clients to understand their needs and
               preferences and is dedicated to creating spaces that reflect their
               unique personalities and lifestyles.
-            </TextImageBlock>
+            </ImageTextBlock>
             <TextImageBlock
               title="Michael | Designer"
               src={micheal}
@@ -162,7 +162,7 @@ export default function AboutPage() {
               <br /> He works closely with clients to develop designs that are
               both beautiful and functional.
             </TextImageBlock>
-            <TextImageBlock
+            <ImageTextBlock
               title="Emily | Designer"
               src={emily}
               alt="Designer Emily"
@@ -179,7 +179,7 @@ export default function AboutPage() {
               She works closely with clients to understand their design
               preferences and is dedicated to creating spaces that reflect their
               unique personalities and lifestyles.
-            </TextImageBlock>
+            </ImageTextBlock>
           </div>
         </div>
       </div>
