@@ -5,10 +5,6 @@ import ProductPage from "./pages/ProductPage";
 import ContactPage from "./pages/ContactPage";
 import Header from "./components/Header";
 
-// pages: home, shop, about, contact
-
-//For home page we can just copy the example
-
 // For Shop we have all our products displayed and we can make a filter
 
 // For about we can put history, mission and the team

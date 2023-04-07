@@ -84,16 +84,16 @@ div.home-page {
       flex: 1;
       img {
         width: 97%;
-        border-radius: 10%;
+        border-radius: 5vw;
       }
       div.color-block {
-        height: 40%;
-        width: 40%;
+        height: 70%;
+        width: 60%;
         background-color: $primary-color;
-        border-radius: 10%;
+        border-radius: 5vw;
         position: absolute;
-        right: 0;
-        bottom: -1.5%;
+        right: -1%;
+        bottom: -2%;
         z-index: -1;
       }
     }
@@ -164,6 +164,7 @@ div.home-page {
 
     div.video {
       width: 100vw;
+
       border-radius: 20px;
       overflow: hidden;
     }
@@ -226,10 +227,13 @@ div.home-page {
     align-self: center;
 
     main.content {
+      h3 {
+        font-weight: 400;
+      }
       width: 100%;
       background-color: $primary-color;
       color: white;
-      padding-bottom: 4vw;
+      padding-bottom: 3vw;
       border-radius: 20px;
       overflow: hidden;
     }
