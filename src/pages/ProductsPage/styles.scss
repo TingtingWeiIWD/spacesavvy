@@ -1,0 +1,8 @@
+@import "../../styles/variables.scss";
+
+.productslist{
+    max-width: 80%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 219, 165);
+}

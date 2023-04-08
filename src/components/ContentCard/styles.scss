@@ -1,4 +1,4 @@
-@import "../../styles/variebles.scss";
+@import "../../styles/variables.scss";
 
 main.content {
   text-align: center;
@@ -14,4 +14,9 @@ main.content {
     flex-direction: column;
     align-self: center;
   }
+}
+
+.container feature1 {
+  flex-direction: row;
+  background-color: burlywood;
 }

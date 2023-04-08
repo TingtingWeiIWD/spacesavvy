@@ -26,7 +26,7 @@ export default function HomePage() {
             <br />
             We're presenting the Best Creative future.
           </p>
-          <Button text="View in shop →" href=" " />
+          <Button text="View in shop →" href="/products" />
         </div>
       </div>
       <div className="certificates">
@@ -133,7 +133,7 @@ export default function HomePage() {
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </div>
