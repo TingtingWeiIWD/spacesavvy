@@ -25,7 +25,6 @@ function App() {
       const data = await database.load();
       setProducts(data);
       setIsLoading(false);
-      console.log('loaded data: ', data);
     })();
   }, []);
 

@@ -1,0 +1,9 @@
+.products-list {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    max-width: 80%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}

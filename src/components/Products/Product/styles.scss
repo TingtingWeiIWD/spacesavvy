@@ -1,24 +1,32 @@
 @import '../../../styles/variables.scss';
 
 .product-card {
+    display: flex;
     background-color: $light-gray;
     align-items: center;
     padding: 1rem;
-    margin-bottom: 2rem;
     width: 20%;
+    height: 700px;
     box-sizing: border-box;
     text-decoration: none;
     color: $text-color;
     border-radius: 30px 0;
+    margin: 3rem;
+    justify-content: space-between;
 
     .description {
         font-size: 1.2rem;
         margin: 1rem 1rem 0.8rem;
     }
 
+    .image {
+        height: 250px;
+        justify-content: end;
+    }
+
     img {
         max-width: 85%;
-        max-height: 80%;
+        max-height: 100%;
         margin: 1.4rem;
         border-radius: 0 20px;
     }

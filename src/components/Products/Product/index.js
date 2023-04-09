@@ -7,7 +7,7 @@ export default function Product(props) {
     return (
         <div className="product-card">
             <div className='title'>{product.title}</div>
-            <img src={product.image} alt={"Bed 1"}></img>
+            <div className='image'><img src={product.image} alt={"Bed 1"}></img></div>
             <div className='description'>{product.description}</div>
             <div className='price'>Price: ${product.price}</div>
             <div className="info">
