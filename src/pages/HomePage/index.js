@@ -131,9 +131,9 @@ export default function HomePage() {
             height="400"
             src="https://www.youtube.com/embed/BJeg2Kta2wY"
             title="YouTube video player"
-            //frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
+            style={{border: "0px"}}
           ></iframe>
         </div>
       </div>
