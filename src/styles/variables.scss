@@ -17,3 +17,21 @@ $danger-color: #cd2424;
     @content;
   }
 }
+
+@mixin breakpoint-small {
+  @include breakpoint(640px) {
+      @content;
+  }
+}
+
+@mixin breakpoint-medium {
+  @include breakpoint(1007px) {
+      @content;
+  }
+}
+
+@mixin breakpoint-extra-large {
+  @include breakpoint(1500px) {
+      @content;
+  }
+}

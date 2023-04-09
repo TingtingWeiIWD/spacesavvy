@@ -9,18 +9,18 @@ export default function Product(props) {
             <div className='title'>{product.title}</div>
             <div className='image'><img src={product.image} alt={"Bed 1"}></img></div>
             <div className='description'>{product.description}</div>
-            <div className='price'>Price: ${product.price}</div>
             <div className="info">
                 <div>Availability
-                    <strong>{isAvailable ? 'In Stock' : 'Out of Stock'}</strong>
+                    <span>{isAvailable ? 'In Stock' : 'Out of Stock'}</span>
                 </div>
                 <div>Measurements
-                    <strong>{product.measurements}</strong>
+                    <span>{product.measurements}</span>
                 </div>
                 <div>Weight
-                    <strong>{product.weight}</strong>
+                    <span>{product.weight}</span>
                 </div>
             </div>
+            <div className='price'>Price: ${product.price}</div>
         </div>
     );
 }
