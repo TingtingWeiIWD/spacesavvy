@@ -3,7 +3,9 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProductsPage from "./pages/ProductsPage";
 import ContactPage from "./pages/ContactPage";
+import PageNotFound from "./pages/PageNotFound";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import * as database from './database';
 import Loading from "./components/Loading";
@@ -42,7 +44,9 @@ function App() {
         />} />
         <Route path="/About" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
