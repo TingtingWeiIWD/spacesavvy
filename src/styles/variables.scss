@@ -1,5 +1,5 @@
 $title-font: "Abril Fatface", cursive;
-$body-font: "Barlow Condensed", sans-serif;
+$body-font: "Quicksand", sans-serif;
 
 $primary-color: #3e6633;
 $secondary-color: #bb7302;
@@ -20,18 +20,18 @@ $danger-color: #cd2424;
 
 @mixin breakpoint-small {
   @include breakpoint(640px) {
-      @content;
+    @content;
   }
 }
 
 @mixin breakpoint-medium {
   @include breakpoint(1007px) {
-      @content;
+    @content;
   }
 }
 
 @mixin breakpoint-extra-large {
   @include breakpoint(1500px) {
-      @content;
+    @content;
   }
 }
