@@ -31,8 +31,11 @@ div.home-page {
     position: relative;
     div {
       position: absolute;
-      top: 15vw;
+      top: 5vw;
       left: 10vw;
+      p {
+        width: 80%;
+      }
     }
     img {
       width: 100%;
