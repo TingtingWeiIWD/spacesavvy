@@ -92,6 +92,23 @@ export default function AboutPage() {
               exceptional customer service.
             </TextImageBlock>
             <ImageTextBlock
+              title="Sarah | CEO"
+              src={sarah}
+              alt="CEO Sarah"
+              className="sarah"
+            >
+              Sarah Williams is the CEO of SpaceSavvy and has been with the
+              company since its founding. <br />
+              <br />
+              With over 20 years of experience in the interior design industry,
+              Sarah is a seasoned professional who brings a wealth of knowledge
+              and expertise to her role. <br />
+              <br />
+              Under her leadership, SpaceSavvy has grown into a successful and
+              highly respected design firm, known for its innovative designs and
+              exceptional customer service.
+            </ImageTextBlock>
+            <ImageTextBlock
               title="John | Co-founder / Head of Design Team"
               src={john}
               alt="Co-founder / Head of Design Team John"
@@ -128,6 +145,24 @@ export default function AboutPage() {
               lasting relationships with them.
             </TextImageBlock>
             <ImageTextBlock
+              title="Lisa | CMO"
+              src={lisa}
+              alt="CMO Lisa"
+              className="lisa"
+            >
+              Lisa Brown is the Chief Marketing Officer at SpaceSavvy and brings
+              over a decade of experience in marketing and advertising to the
+              company.
+              <br />
+              <br /> With a keen eye for detail and a deep understanding of
+              consumer behavior, Lisa is responsible for developing and
+              implementing marketing strategies that drive growth and increase
+              brand awareness. <br />
+              <br />
+              She is passionate about connecting with customers and building
+              lasting relationships with them.
+            </ImageTextBlock>
+            <ImageTextBlock
               title="Samantha | Designer"
               src={samantha}
               alt="Designer Samantha"
@@ -162,6 +197,23 @@ export default function AboutPage() {
               <br /> He works closely with clients to develop designs that are
               both beautiful and functional.
             </TextImageBlock>
+            <ImageTextBlock
+              title="Michael | Designer"
+              src={micheal}
+              alt="Designer Micheal"
+              className="micheal"
+            >
+              Michael Chen is a skilled designer at SpaceSavvy with a background
+              in architecture and a passion for creating innovative design
+              solutions. <br />
+              <br />
+              With over 10 years of experience in the industry, Michael brings a
+              unique perspective to each project and is known for his ability to
+              transform even the most challenging spaces.
+              <br />
+              <br /> He works closely with clients to develop designs that are
+              both beautiful and functional.
+            </ImageTextBlock>
             <ImageTextBlock
               title="Emily | Designer"
               src={emily}

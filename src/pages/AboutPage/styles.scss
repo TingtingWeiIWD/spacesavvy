@@ -1,6 +1,47 @@
 @import "../../styles/variables.scss";
 
 div.about-page {
+  h2 {
+    font-size: 5vw;
+  }
+  p {
+    font-size: 3.5vw;
+  }
+  h3 {
+    font-size: 4vw;
+  }
+  div.text-image {
+    visibility: hidden;
+    height: 0;
+    display: none;
+  }
+  @include breakpoint-small {
+    h2 {
+      font-size: 4vw;
+    }
+    h3 {
+      font-size: 3vw;
+    }
+    p {
+      font-size: 2vw;
+    }
+    div.text-image {
+      visibility: visible;
+      height: unset;
+    }
+    div.image-text.sarah,
+    div.image-text.lisa,
+    div.image-text.micheal {
+      visibility: hidden;
+      height: 0;
+      display: none;
+      div.color-block {
+        visibility: hidden;
+        height: 0;
+        display: none;
+      }
+    }
+  }
   display: flex;
   flex-direction: column;
   row-gap: 8vw;
@@ -12,7 +53,14 @@ div.about-page {
     display: flex;
     width: 80%;
     align-self: center;
-    column-gap: 3vw;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 3vw;
+    @include breakpoint-small {
+      flex-direction: row;
+      column-gap: 3vw;
+      text-align: left;
+    }
     div {
       display: flex;
       flex: 1;
@@ -21,7 +69,7 @@ div.about-page {
         font-family: $title-font;
         display: flex;
         justify-content: center;
-        font-size: 3vw;
+        //font-size: 3vw;
         margin: 0;
         margin-top: 4vw;
         flex: 1;
@@ -48,12 +96,17 @@ div.about-page {
     display: flex;
     width: 80%;
     align-self: center;
-    column-gap: 3vw;
+    flex-direction: column;
+    row-gap: 3vw;
+    @include breakpoint-small {
+      flex-direction: row;
+      column-gap: 3vw;
+    }
     h3 {
       font-family: $title-font;
       display: flex;
       justify-content: center;
-      font-size: 2.5vw;
+      // font-size: 5vw;
       margin: 0;
       margin-top: 4vw;
       flex: 1;
@@ -72,12 +125,17 @@ div.about-page {
     display: flex;
     width: 80%;
     align-self: center;
-    column-gap: 3vw;
+    flex-direction: column;
+    row-gap: 3vw;
+    @include breakpoint-small {
+      flex-direction: row;
+      column-gap: 3vw;
+    }
     h3 {
       font-family: $title-font;
       display: flex;
       justify-content: center;
-      font-size: 2.5vw;
+      //font-size: 2.5vw;
       margin: 0;
       margin-top: 4vw;
       flex: 1;
@@ -106,7 +164,7 @@ div.about-page {
         width: 100%;
         h3 {
           font-family: $title-font;
-          font-size: 3vw;
+          //font-size: 3vw;
           // font-weight: 400;
           margin-top: 8vw;
         }
@@ -119,12 +177,16 @@ div.about-page {
       div.bio {
         width: 100%;
         display: flex;
+        flex-direction: column;
         row-gap: 4vw;
         div.text-image,
         div.image-text {
           width: 100%;
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
+          @include breakpoint-small {
+            flex-direction: row;
+          }
           column-gap: 5vw;
           div.text {
             flex: 1;
@@ -135,13 +197,25 @@ div.about-page {
             position: relative;
 
             img {
-              width: 97%;
-              height: 50vw;
+              width: 100%;
+              // width: 100vw;
+              aspect-ratio: 1/1.2;
+              @include breakpoint-small {
+                width: 97%;
+                height: 50vw;
+                object-fit: cover;
+              }
+              //height: 50vw;
               object-fit: cover;
               border-radius: 5vw;
               z-index: 1;
             }
             div.color-block {
+              visibility: hidden;
+
+              @include breakpoint-small {
+                visibility: visible;
+              }
               height: 40vw;
               width: 60%;
               background-color: $primary-color;

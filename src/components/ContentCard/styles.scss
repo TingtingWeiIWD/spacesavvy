@@ -5,11 +5,17 @@ main.content {
   display: flex;
   flex-direction: column;
   h3 {
-    font-size: 2.5vw;
+    // font-size: 45vw;
     font-family: $title-font;
+    // @include breakpoint-small {
+    //   font-size: 2.5vw;
+    // }
   }
   div {
-    font-size: 2vw;
+    // font-size: 3.5vw;
+    // // @include breakpoint-small {
+    // //   font-size: 2.5vw;
+    // // }
     display: flex;
     flex-direction: column;
     align-self: center;

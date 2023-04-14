@@ -16,13 +16,15 @@ export default function ContactPage() {
             <span className="icon-container">
               <BsTelephone />
             </span>
-            <span>+123 456 7890</span>
+            <span className="contact-span">+123 456 7890</span>
           </div>
           <div className="address">
             <span className="icon-container">
               <HiOutlineLocationMarker />
             </span>
-            <span>130 Dundas Street, London Ontario </span>
+            <span className="contact-span">
+              130 Dundas Street, London Ontario
+            </span>
           </div>
         </div>
         <div className="contact-form">

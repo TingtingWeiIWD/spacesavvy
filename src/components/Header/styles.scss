@@ -10,17 +10,36 @@ div.header-container {
     justify-content: space-between;
     div.brand-name {
       display: flex;
-      align-items: center;
-      font-family: $title-font;
-      font-size: 3vw;
+
+      a {
+        display: flex;
+        align-items: center;
+        font-family: $title-font;
+        font-size: 4vw;
+        text-decoration: none;
+        color: $text-color;
+      }
     }
+    // div.nav-bar {
+    //   visibility: hidden;
+    //   height: 0;
+    // }
+    // div.nav-mobile {
+    //   visibility: visible;
+    //   text-align: right;
+    // }
+    // @include breakpoint-small {
+    //   div.nav-mobile {
+    //     visibility: hidden;
+    //   }
     div.nav-bar {
       display: flex;
       justify-content: center;
+      // visibility: visible;
 
       ul {
         display: flex;
-        column-gap: 2rem;
+        column-gap: 2vw;
 
         li {
           list-style: none;
@@ -32,7 +51,7 @@ div.header-container {
             height: 100%;
             padding: 0.5rem;
             border-radius: 5px;
-
+            font-size: 2.5vw;
             &.active {
               background-color: $primary-color;
               color: white;
@@ -43,3 +62,4 @@ div.header-container {
     }
   }
 }
+// }

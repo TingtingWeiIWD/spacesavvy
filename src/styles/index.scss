@@ -10,7 +10,10 @@ body {
   color: $text-color;
   font-family: $body-font;
   font-weight: 400;
-  font-size: 2vw;
+  font-size: 3.5vw;
+  @include breakpoint-small {
+    font-size: 2vw;
+  }
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

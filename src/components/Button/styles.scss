@@ -1,19 +1,30 @@
 @import "../../styles/variables.scss";
 
 a.btn {
-  display: block;
-  width: 120px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 60%;
   background-color: $primary-color;
   padding: 8px 20px;
   border-radius: 5px;
   color: white;
   text-decoration: none;
   text-align: center;
-  font-size: medium;
+  font-size: 3.5vw;
+  @include breakpoint-small {
+    display: flex;
+    align-self: initial;
+    justify-content: center;
+    width: 22vw;
+    font-size: 2vw;
+  }
 }
 
 a.link {
   display: block;
+  // width: 150px;
+
   padding-top: 20px;
   border-radius: 5px;
   color: $primary-color;

@@ -1,12 +1,22 @@
 import "./styles.scss";
+import { IoMdMenu } from "react-icons/io";
 
 import { NavLink } from "react-router-dom";
 export default function Header() {
+  // const onClickNavMobile = () => {
+  //   console.log("s");
+  // };
   return (
     <div className="header-container">
       <div className="header">
-        <div className="brand-name">SpaceSavvy</div>
+        <div className="brand-name">
+          <NavLink to="/">SpaceSavvy</NavLink>
+        </div>
+
         <div className="nav-bar">
+          {/* <div className="nav-mobile" onClick={onClickNavMobile}>
+            <IoMdMenu />
+          </div> */}
           <ul>
             <li>
               <NavLink to="/">Home</NavLink>
