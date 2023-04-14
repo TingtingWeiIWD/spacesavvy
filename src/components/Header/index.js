@@ -1,5 +1,4 @@
 import "./styles.scss";
-import { IoMdMenu } from "react-icons/io";
 
 import { NavLink } from "react-router-dom";
 export default function Header() {

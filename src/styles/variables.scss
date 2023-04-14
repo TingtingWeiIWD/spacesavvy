@@ -24,14 +24,8 @@ $danger-color: #cd2424;
   }
 }
 
-@mixin breakpoint-medium {
-  @include breakpoint(1007px) {
-    @content;
-  }
-}
-
 @mixin breakpoint-extra-large {
-  @include breakpoint(1500px) {
+  @include breakpoint(1200px) {
     @content;
   }
 }

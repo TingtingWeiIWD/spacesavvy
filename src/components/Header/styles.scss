@@ -18,6 +18,10 @@ div.header-container {
         font-size: 4vw;
         text-decoration: none;
         color: $text-color;
+
+        @include breakpoint-extra-large {
+          font-size: 2.5rem;
+        }
       }
     }
     // div.nav-bar {
@@ -55,6 +59,10 @@ div.header-container {
             &.active {
               background-color: $primary-color;
               color: white;
+            }
+
+            @include breakpoint-extra-large {
+              font-size: 1.7rem;
             }
           }
         }
