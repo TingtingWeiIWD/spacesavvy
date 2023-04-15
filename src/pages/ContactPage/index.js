@@ -8,7 +8,6 @@ export default function ContactPage() {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log("aa");
     emailjs
       .sendForm(
         "service_lnklt1j",

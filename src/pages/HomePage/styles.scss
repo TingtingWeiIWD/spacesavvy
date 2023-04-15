@@ -266,6 +266,11 @@ div.home-page {
           top: -8vw;
           left: 5%;
           text-decoration: none;
+          &:hover {
+            background-color: $primary-color;
+            color: white;
+            transition: all 0.5s ease;
+          }
         }
       }
     }
