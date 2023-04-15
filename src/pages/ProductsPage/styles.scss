@@ -19,5 +19,9 @@ div.product-page {
     background-color: $light-gray;
     padding: 1vw 0;
     // color: white;
+    a {
+      text-decoration: none;
+      color: $text-color;
+    }
   }
 }

@@ -1,8 +1,31 @@
 import team from "./team.jpg";
 import "./styles.scss";
 import { BsTelephone } from "react-icons/bs";
-import { HiOutlineLocationMarker } from "react-icons/hi";
+import { RiMapPinLine } from "react-icons/ri";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 export default function ContactPage() {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log("aa");
+    emailjs
+      .sendForm(
+        "service_lnklt1j",
+        "template_28bjm8q",
+        form.current,
+        "JY__oOxBpIzgf0ztE"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className="contact-page">
       <div>
@@ -10,7 +33,7 @@ export default function ContactPage() {
           <h2>
             Have any query?
             <br />
-            Fell free to contact us!
+            Feel free to contact us!
           </h2>
           <div className="phone">
             <span className="icon-container">
@@ -20,15 +43,31 @@ export default function ContactPage() {
           </div>
           <div className="address">
             <span className="icon-container">
-              <HiOutlineLocationMarker />
+              <RiMapPinLine />
             </span>
             <span className="contact-span">
-              130 Dundas Street, London Ontario
+              <a
+                href="https://goo.gl/maps/eJn38JCtYHK12Fkz6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                130 Dundas Street, London Ontario
+              </a>
             </span>
           </div>
+          <iframe
+            title="map to SpacaSavvy"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.747411450811!2d-81.25364082314628!3d42.98359417114179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef21d6f008d79%3A0xa4887a476f953f44!2s130%20Dundas%20St%2C%20London%2C%20ON%20N6A%201G2!5e0!3m2!1sen!2sca!4v1681581300281!5m2!1sen!2sca"
+            width="100%"
+            //height="200"
+            style={{ border: 0 }}
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-        <div className="contact-form">
-          <form>
+        <div className="contact-form" onSubmit={sendEmail}>
+          <form ref={form}>
             <div>
               <label>Hi I'm *</label>
               <input

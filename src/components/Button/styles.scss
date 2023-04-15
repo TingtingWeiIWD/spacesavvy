@@ -12,6 +12,8 @@ a.btn {
   text-decoration: none;
   text-align: center;
   font-size: 3.5vw;
+  border: solid 1px $primary-color;
+
   @include breakpoint-small {
     display: flex;
     align-self: initial;
@@ -24,9 +26,25 @@ a.btn {
 a.link {
   display: block;
   // width: 150px;
+  border: solid 1px white;
 
   padding-top: 20px;
-  border-radius: 5px;
+  //border-radius: 5px;
   color: $primary-color;
   text-decoration: none;
+}
+
+a.btn:hover {
+  border: solid 1px $primary-color;
+  background: transparent;
+  color: $primary-color;
+  transition: all 0.5s ease;
+}
+
+a.link:hover {
+  //border-bottom: solid 1px $primary-color;
+  background: transparent;
+  font-weight: 700;
+  color: $primary-color;
+  transition: all 0.5s ease;
 }

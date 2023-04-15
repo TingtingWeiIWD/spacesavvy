@@ -16,34 +16,39 @@ div.contact-page {
     width: 90%;
     margin-top: 3vw;
     flex-direction: column;
-    row-gap: 3vw;
+
     align-self: center;
     @include breakpoint-small {
       flex-direction: row;
       width: 80%;
-      column-gap: 3vw;
+
+      column-gap: 5vw;
     }
     div.contact-text {
       display: flex;
       flex: 1;
-
       flex-direction: column;
+      iframe {
+        margin-top: 3vw;
+        border-radius: 3vw;
+        height: 20vw;
+      }
       div.phone,
       div.address {
         height: 10vw;
-
+        width: 100%;
         display: flex;
         flex-direction: row;
         @include breakpoint-small {
-          align-items: center;
-          align-self: flex-start;
+          align-items: start;
+          // align-self: flex-start;
           height: 6vw;
         }
 
         justify-content: flex-start;
         border: solid 1px $border-color;
         border-radius: 3vw;
-        padding: 0 2vw 0 1vw;
+        //padding: 0 2vw 0 1vw;
         span.icon-container {
           width: 3vw;
           height: 3vw;
@@ -56,16 +61,23 @@ div.contact-page {
           justify-content: center;
 
           align-self: center;
-          margin: 0 2vw;
+          margin: 2vw;
           @include breakpoint-small {
-            margin: 0;
+            margin: 0 0 0 1vw;
           }
         }
       }
       span.contact-span {
         display: flex;
-
+        flex: 1;
         align-self: center;
+        a {
+          text-decoration: none;
+          color: $text-color;
+          &:hover {
+            color: $primary-color;
+          }
+        }
       }
       h2 {
         font-family: $title-font;
@@ -73,14 +85,19 @@ div.contact-page {
     }
 
     div.contact-form {
+      display: flex;
       flex: 1;
       height: inherit;
+      @include breakpoint-small {
+        align-self: flex-end;
+      }
       form {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
         div {
           width: 100%;
           display: flex;
@@ -89,7 +106,8 @@ div.contact-page {
           input.inputEmail {
             height: 10vw;
             @include breakpoint-small {
-              height: 3vw;
+              height: 4vw;
+              border-radius: 1vw;
             }
             border: solid 1px $border-color;
             border-radius: 5px;
@@ -101,7 +119,8 @@ div.contact-page {
           textarea {
             height: 20vw;
             @include breakpoint-small {
-              height: 7vw;
+              height: 10vw;
+              border-radius: 1vw;
             }
             border: solid 1px $border-color;
             background-color: rgba(41, 69, 41, 0.195);
@@ -112,19 +131,25 @@ div.contact-page {
             border-radius: 5px;
           }
           input.submit {
-            width: 80%;
+            width: 100%;
             align-self: center;
-            border: none;
+            border: solid 1px white;
+
             border-radius: 1vw;
             background-color: $primary-color;
             color: white;
             padding: 0.5vw;
             font-size: 4vw;
             font-family: $body-font;
+            &:hover {
+              border: solid 1px $primary-color;
+              background: transparent;
+              color: $primary-color;
+              transition: all 0.5s ease;
+            }
             @include breakpoint-small {
-              width: 22vw;
               align-self: flex-start;
-              font-size: 3vw;
+              font-size: 2vw;
             }
           }
         }

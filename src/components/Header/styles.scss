@@ -18,7 +18,9 @@ div.header-container {
         font-size: 4vw;
         text-decoration: none;
         color: $text-color;
-
+        &:hover {
+          color: $primary-color;
+        }
         @include breakpoint-extra-large {
           font-size: 2.5rem;
         }
@@ -59,6 +61,17 @@ div.header-container {
             &.active {
               background-color: $primary-color;
               color: white;
+              &:hover {
+                background-color: $primary-color;
+                color: white;
+                border-radius: 5px;
+                border-bottom: none;
+              }
+            }
+            &:hover {
+              color: $primary-color;
+              border-bottom: solid 1px $primary-color;
+              border-radius: 0;
             }
 
             @include breakpoint-extra-large {
