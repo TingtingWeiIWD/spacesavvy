@@ -42,13 +42,13 @@
     }
 
     .info {
-        display: -webkit-inline-box;
+        display: flex;
+        flex-direction: row;
+        column-gap: 17px;
 
         div {
             font-size: 0.9rem;
             color: $body-font;
-            margin: 1rem;
-            margin: 0.8rem;
 
             strong {
                 font-family: $body-font;
