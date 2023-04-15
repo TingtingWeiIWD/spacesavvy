@@ -1,0 +1,42 @@
+@import "../../styles/variables.scss";
+
+div.not-found-page {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  row-gap: 5vw;
+  min-height: 100%;
+  img {
+    width: 100%;
+    @include breakpoint-small {
+      width: 50vw;
+      border-radius: 20%;
+      align-self: center;
+    }
+  }
+  main {
+    width: 80%;
+    display: flex;
+    align-self: center;
+    a {
+      margin-top: 5vw;
+      display: flex;
+      padding: 1vw;
+      border-radius: 5px;
+      text-align: center;
+      align-self: center;
+      align-items: center;
+      justify-content: center;
+      font-family: $title-font;
+      font-size: 4vw;
+      text-decoration: none;
+      color: white;
+      background-color: $primary-color;
+      @include breakpoint-small {
+        font-size: 2vw;
+      }
+    }
+  }
+}

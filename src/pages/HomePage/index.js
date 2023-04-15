@@ -121,9 +121,10 @@ export default function HomePage() {
       </div>
       <div className="pick-your-choice">
         <ContentCard title="Pick your choice">
-          Non excepteur amet laborum ad eiusmod voluptate exercitation officia
-          ad. Aliquip do et fugiat velit culpa Lorem velit eiusmod ex fugiat
-          sint.
+          Personalize your space and make it truly your own with our Pick Your
+          Choice selection. From unique accent pieces to customizable furniture,
+          you're sure to find something that speaks to your individual style and
+          needs.
         </ContentCard>
         <div className="video">
           <iframe
@@ -140,8 +141,9 @@ export default function HomePage() {
 
       <div className="articles-news">
         <ContentCard title="Articles & News" className="AN-explain">
-          Labore esse cupidatat laborum culpa nisi pariatur incididunt commodo
-          commodo. Non aliqua qui officia esse est sint aliqua mollit elit.
+          Stay up to date with the latest trends and tips in interior design
+          with our curated collection of news and articles. From expert advice
+          to inspiring design ideas, we've got you covered.
         </ContentCard>
         <div className="thumbnail-group">
           <div className="thumbnail">
