@@ -20,9 +20,9 @@ export default function AboutPage() {
         </div>
         <div>
           <p>
-            Ad dolore deserunt ullamco ut consectetur pariatur ipsum enim et.
-            Velit nulla ad eiusmod minim consectetur reprehenderit laborum ipsum
-            est tempor labore tempor.
+            Our mission is to help our clients create beautiful and functional
+            living spaces that reflect their unique personalities and
+            lifestyles.
           </p>
         </div>
       </div>
