@@ -19,29 +19,30 @@ import "./styles/index.scss";
 
 function App() {
   const [products, setProducts] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  //  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
-    (async () => {
-      const data = await database.load();
-      setProducts(data);
-      setIsLoading(false);
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     const data = await database.load();
+  //     setProducts(data);
+  //     setIsLoading(false);
+  //   })();
+  // }, []);
 
-  if (isLoading) {
-    return <Loading />;
-  }
+  // if (isLoading) {
+  //   return <Loading />;
+  // }
 
   return (
     <div className="App">
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route
+        {/* <Route
           path="/products"
           element={<ProductsPage products={products} />}
-        />
+        /> */}
         <Route path="/About" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<PageNotFound />} />
