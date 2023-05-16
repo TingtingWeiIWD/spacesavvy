@@ -39,10 +39,10 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route
+        <Route
           path="/products"
           element={<ProductsPage products={products} />}
-        /> */}
+        />
         <Route path="/About" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<PageNotFound />} />

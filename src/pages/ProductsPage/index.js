@@ -13,8 +13,12 @@ export default function ProductsPage({ products }) {
           beautiful pieces to your home!
         </NavLink>
       </div>
-      <ContentCard title="Products" className="feature1">
+      {/* <ContentCard title="Products" className="feature1">
         <Products products={products} />
+      </ContentCard> */}
+      <ContentCard title="Oops.. No product available now" className=" ">
+        Come to our store and let our designer recommend!
+        <NavLink to="/">Back to Home</NavLink>
       </ContentCard>
     </div>
   );
